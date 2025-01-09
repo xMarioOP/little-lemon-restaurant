@@ -73,15 +73,18 @@ Ensure that the repository settings in GitHub Pages are configured to serve from
 
 ```
 project-root
-├── public       # Static assets
-├── src          # Source code
-│   ├── components # Reusable UI components
+├── public            # Static assets
+├── src               # Source code
+│   ├── components    # Reusable UI components
 │   ├── icon_assets   # Images and other media
-│   ├── page    # Page-specific components
-│   └── App.css  # Main application styles
-│   └── App.jsx  # Main application component
-├── package.json # Project metadata and dependencies
-└── vite.config.js # Vite configuration
+│   ├── page          # Page-specific components
+│   ├── App.css       # Main application styles
+│   ├── App.jsx       # Main application component
+│   ├── App.test.jsx  # Main application test
+│   ├── index.css     # Global styles
+│   └── main.jsx      # Main application file
+├── package.json      # Project metadata and dependencies
+└── vite.config.js    # Vite configuration
 ```
 
 ## Future Improvements

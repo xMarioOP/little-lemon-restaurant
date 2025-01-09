@@ -1,19 +1,22 @@
-import { useState } from 'react'
-import './App.css'
-import { Header } from './components/Header'
-import { Main } from './components/Main'
-import { Footer } from './components/Footer'
+
+import './App.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Header from "./components/Header";
+import Nav from "./components/Nav";
+import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <Header />
-      <Main />
-      <Footer />
+      <Router>
+        <Nav/>
+        <Header/>
+        <Main/>
+        <Footer/>
+      </Router>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
